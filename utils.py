@@ -51,7 +51,7 @@ class FaceScraper:
             self.driver = webdriver.Chrome(options=chrome_options)
 
     def signin(self):
-        self.driver.get("https://internal.namabank.com.vn/fra/")
+        self.driver.get("your-web")
         time.sleep(1)
         button_class = "cta"
         button_element = self.driver.find_element(By.CLASS_NAME, button_class)
